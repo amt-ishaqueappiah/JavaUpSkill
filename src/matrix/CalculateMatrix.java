@@ -35,14 +35,14 @@ public class CalculateMatrix {
         System.out.println("Enter the values for matrix A (" + rowsA + "x" + colsA + "):");
         for (int i = 0; i < rowsA; i++) {
             matrixA[i] = InputHandler.getValidRowInput(colsA,  "Enter values for row " + (i + 1) + " of matrix A (separated by spaces) it should be "+ colsA+" numbers for each row : ", mistakeCount);
-            if (matrixA[i] == null) return; // Exit if three mistakes are made
+            if (matrixA[i] == null) return;
         }
 
         // Get values for matrix B
         System.out.println("Enter the values for matrix B (" + rowsB + "x" + colsB + "):");
         for (int i = 0; i < rowsB; i++) {
             matrixB[i] = InputHandler.getValidRowInput(colsB, "Enter values for row " + (i + 1) + " of matrix B (separated by spaces) it should be "+colsB+" numbers for each row : ", mistakeCount);
-            if (matrixB[i] == null) return; // Exit if three mistakes are made
+            if (matrixB[i] == null) return;
         }
 
 
