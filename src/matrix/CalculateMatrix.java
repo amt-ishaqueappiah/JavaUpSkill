@@ -8,23 +8,23 @@ public class CalculateMatrix {
     int[][] matrixB;
     int[][] result;
 
-    // Method to take input for matrices and perform calculations
+
     public void takeInputAndCalculate() {
         Scanner scanner = new Scanner(System.in);
 
-        // Input dimensions for matrixA
+
         System.out.print("Enter the number of rows for matrix A: ");
         int rowsA = scanner.nextInt();
         System.out.print("Enter the number of columns for matrix A: ");
         int colsA = scanner.nextInt();
 
-        // Input dimensions for matrixB
+
         System.out.print("Enter the number of rows for matrix B: ");
         int rowsB = scanner.nextInt();
         System.out.print("Enter the number of columns for matrix B: ");
         int colsB = scanner.nextInt();
 
-        // Check if matrix multiplication is possible
+
         if (rowsA != colsB) {
             System.out.println("Matrix multiplication is not possible because number of rows in matrix A is not equal to number of columns in matrix B.");
             return;
@@ -53,17 +53,14 @@ public class CalculateMatrix {
             }
         }
 
-        // Perform matrix multiplication
+
         calculateMatrix(rowsA, colsA, rowsB, colsB);
 
-        // Show the result
         showResult(rowsA, colsB);
 
-        // Close the scanner
         scanner.close();
     }
 
-    // Method to calculate the result matrix after multiplication
     public void calculateMatrix(int rowsA, int colsA, int rowsB, int colsB) {
         for (int i = 0; i < rowsA; i++) {
             for (int j = 0; j < colsB; j++) {
