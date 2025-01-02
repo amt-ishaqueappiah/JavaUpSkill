@@ -1,11 +1,13 @@
 package matrix;
 
 public class CalculateMatrix {
-    int[][] matrixA = {{12, 2, 4}, {10, 1, 1}};
-    int[][] matrixB={{2 ,2},{1 ,2},{1 ,1}};
+    int[][] matrixA = new int[2][3];  // 2x3 matrix
+    int[][] matrixB = new int[3][2];  // 3x2 matrix
 
-    int[][] result= new int[2][2];
-    int sum =0;
+    int[][] result = new int[2][2];  // Result matrix (2x2)
+    int sum = 0;
+
+
 
     public void calculateMatrix(){
         for(int i=0;  i< 2; i++){
