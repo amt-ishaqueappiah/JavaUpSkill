@@ -52,7 +52,7 @@ public class CalculateMatrix {
         }
 
 
-        calculateMatrix(rowsA, colsA, rowsB, colsB);
+        calculateMatrix(rowsA, colsA,  colsB);
 
 
         showResult(rowsA, colsB);
@@ -123,7 +123,7 @@ public class CalculateMatrix {
     }
 
 
-    public void calculateMatrix(int rowsA, int colsA, int rowsB, int colsB) {
+    public void calculateMatrix(int rowsA, int colsA,  int colsB) {
         for (int i = 0; i < rowsA; i++) {
             for (int j = 0; j < colsB; j++) {
                 int sum = 0;
