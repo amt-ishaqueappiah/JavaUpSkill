@@ -24,7 +24,7 @@ static  int min=Integer.MAX_VALUE;
        System.out.println(maxValues);
     }
 
-    public static void getPeakColums(){
+    public static void getPeakColumns(){
        for(int val:maxValues){
            for (int[] array:matrixA){
                for (int newVal=0; newVal<array.length;newVal++){
@@ -52,7 +52,7 @@ static  int min=Integer.MAX_VALUE;
     public static void main(String[] args) {
 
             getRowMaxValues();
-            getPeakColums();
+            getPeakColumns();
 
     }
 }
