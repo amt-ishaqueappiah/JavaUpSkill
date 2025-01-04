@@ -16,13 +16,13 @@ public class Peak_Columns {
 
     public static void getRowMaxValues() {
         for (int[] array : matrixA) {
-            max = Integer.MIN_VALUE;
             for (int item : array) {
                 if (item > max) {
                     max = item;
                 }
             }
             maxValues.add(max);
+            max=0;
         }
         System.out.println("Maximum values in each row: " + maxValues);
     }
