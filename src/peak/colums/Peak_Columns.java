@@ -43,7 +43,9 @@ static  int min=Integer.MAX_VALUE;
 
            }
        }
-        System.out.println(minValues);
+        for(int item:minValues){
+            System.out.print(item+" ");
+        }
     }
 
 
