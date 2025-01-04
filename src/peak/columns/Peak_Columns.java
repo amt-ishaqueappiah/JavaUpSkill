@@ -52,7 +52,7 @@ public class Peak_Columns {
             if (peakColumns.isEmpty()) {
                 System.out.println("No peak-columns found.");
             } else {
-                System.out.println("Peak-Columns (Maximum in Row, Minimum in Column):");
+
                 for (String peak : peakColumns) {
                     System.out.println(peak);
                 }
