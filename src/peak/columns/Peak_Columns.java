@@ -42,7 +42,7 @@ public class Peak_Columns {
                         }
 
                         if (isMinInColumn) {
-                            peakColumns.add("Position: (" + (i + 1) + ", " + (j + 1) + ") Value: " + matrixA[i][j]);
+                            peakColumns.add("A (" + (i + 1) + ", " + (j + 1) + ") = " + matrixA[i][j]);
                         }
                     }
                 }
