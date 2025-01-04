@@ -25,27 +25,32 @@ static  int min=Integer.MAX_VALUE;
     }
 
     public static void getPeakColumns(){
-       for(int val:maxValues){
-           for (int[] array:matrixA){
-               for (int newVal=0; newVal<array.length;newVal++){
-                   for(int j=0;j<maxValues.size();j++){
-                       if(val< matrixA[j][newVal] && !minValues.contains(val)){
-                           if(min>val){
-                               min=val;
-                               minValues.add(min);
-                           }
+      if(!maxValues.isEmpty()){
+          for(int val:maxValues){
+              for (int[] array:matrixA){
+                  for (int newVal=0; newVal<array.length;newVal++){
+                      for(int j=0;j<maxValues.size();j++){
+                          if(val< matrixA[j][newVal] && !minValues.contains(val)){
+                              if(min>val){
+                                  min=val;
+                                  minValues.add(min);
+                              }
 
-                       }
+                          }
 
-                   }
+                      }
 
-               }
+                  }
 
-           }
-       }
-        for(int item:minValues){
-            System.out.print(item+" ");
-        }
+              }
+          }
+          for(int item:minValues){
+              System.out.print(item+" ");
+          }
+      }
+      else {
+          System.out.println("no max values");
+      }
     }
 
 
