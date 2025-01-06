@@ -41,6 +41,7 @@ public class Peak_Columns {
         } catch (Exception e) {
             System.out.println("Invalid input. Please enter integers only.");
         }
+        scanner.close();
     }
 
     public static void getRowMaxValues() {
